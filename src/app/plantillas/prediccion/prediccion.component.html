@@ -1,1 +1,146 @@
 <app-header></app-header>
+<body class="color-b d-flex justify-content-center align-items-center">
+  <div class="contenedor">
+    <div class="bg-white p-5 rounded-5 text-secondary shadow" style="width: 30rem">
+    <div class="d-flex justify-content-center">
+      <img src="https://cdn-icons-png.flaticon.com/512/5146/5146927.png" alt="registro-icon" style="height: 7rem"/>
+    </div>
+    <form [formGroup]="prediccionForm" (ngSubmit)="postForm(prediccionForm.value)">
+        <div class="text-center fs-1 fw-bold">Predecir</div>
+    <div class="input-group mt-4">
+      <div class="input-group-text color-boton">
+        <img src="https://cdn-icons-png.flaticon.com/512/88/88670.png" alt="icon" style="height: 1rem"/>
+      </div>
+      <input class="form-control" type="number" placeholder="Edad" formControlName="edad"/>
+    </div>
+  <div class="input-group mt-1">
+    <select class="form-select form-select-sm" aria-label="Small select example" formControlName="locacion">
+      <option selected>Elija un pais</option>
+      <option value='16'>Kentucky</option>
+      <option value='18'>Maine</option>
+      <option value='20'>Massachusetts</option>
+      <option value='38'>Rhode Island</option>
+      <option value='36'>Oregon</option>
+      <option value='49'>Wyoming</option>
+      <option value='25'>Montana</option>
+      <option value='17'>Louisiana</option>                                             
+      <option value='47'>West Virginia</option>
+      <option value='24'>Missouri</option>
+      <option value='3'>Arkansas</option>
+      <option value='10'>Hawaii</option>
+      <option value='7'>Delaware</option>
+      <option value='28'>New Hampshire</option>
+      <option value='31'>New York</option>
+      <option value='0'>Alabama</option>
+      <option value='23'>Mississippi</option>
+      <option value='32'>North Carolina</option>
+      <option value='4'>California</option>
+      <option value='34'>Oklahoma</option>
+      <option value='8'>Florida</option>
+      <option value='42'>Texas</option>
+      <option value='27'>Nevada</option>
+      <option value='15'>Kansas</option>
+      <option value='5'>Colorado</option>
+      <option value='33'>North Dakota</option>
+      <option value='12'>Illinois</option>
+      <option value='13'>Indiana</option>
+      <option value='2'>Arizona</option>
+      <option value='1'>Alaska</option>
+      <option value='41'>Tennessee</option>
+      <option value='34'>Ohio</option>
+      <option value='29'>New Jersey</option>
+      <option value='19'>Maryland</option>
+      <option value='44'>Vermont</option>
+      <option value='30'>New Mexico</option>
+      <option value='39'>South Carolina</option>
+      <option value='11'>Idaho</option>
+      <option value='37'>Pennsylvania</option>
+      <option value='6'>Connecticut</option>
+      <option value='43'>Utah</option>
+      <option value='45'>Virginia</option>
+      <option value='9'>Georgia</option>
+      <option value='26'>Nebraska</option>
+      <option value='14'>Iowa</option>
+      <option value='40'>South Dakota</option>
+      <option value='22'>Minnesota</option>
+      <option value='46'>Washington</option>
+      <option value='21'>Wisconsin</option>
+    </select>
+  </div>
+  <div class="input-group mt-1">
+    <select class="form-select form-select-sm" aria-label="Small select example" formControlName="tamaño">
+      <option selected>Seleccione talla</option>
+      <option value='0'>L</option>
+      <option value='1'>S</option>
+      <option value='2'>M</option>
+      <option value='3'>XL</option>
+    </select>
+  </div>
+  <div class="input-group mt-1">
+    <select class="form-select form-select-sm" aria-label="Small select example" formControlName="descuento">
+      <option selected>Seleccion descuento</option>
+      <option value='0'>Si</option>
+      <option value='1'>No</option>
+    </select>
+  </div>
+  <div class="input-group mt-1">
+    <select class="form-select form-select-sm" aria-label="Small select example" formControlName="cod_promocion">
+      <option selected>Seleccione codigo de promocion</option>
+      <option value='0'>Si</option>
+      <option value='1'>No</option>
+    </select>
+  </div>
+  <div class="input-group mt-1">
+    <select class="form-select form-select-sm" aria-label="Small select example" formControlName="color">
+      <option selected>Seleccione color</option>
+      <option value='7' >Gray</option>
+      <option value='12'>Maroon</option>
+      <option value='21'>Turquoise</option>
+      <option value='23'>White</option>
+      <option value='4'>Charcoal</option>
+      <option value='19'>Silver</option>
+      <option value='16'>Pink</option>
+      <option value='17' >Purple</option>
+      <option value='13'>Olive</option>
+      <option value='6'>Gold</option>
+      <option value='22' >Violet</option>
+      <option value='20'>Teal</option>
+      <option value='10'>Lavender</option>
+      <option value='1'>Black</option>
+      <option value='8'>Green</option>
+      <option value='15'>Peach</option>
+      <option value='18'>Red</option>
+      <option value='5'>Cyan</option>
+      <option value='3'>Brown</option>
+      <option value='0'>Beige</option>
+      <option value='14'>Orange</option>
+      <option value='9'>Indigo</option>
+      <option value='24'>Yellow</option>
+      <option value='11'>Magenta</option>
+      <option value='2'>Blue</option>
+    </select>
+  </div>
+  <div class="input-group mt-1">
+    <select class="form-select form-select-sm" aria-label="Small select example" formControlName="temporada">
+      <option selected>Seleccione Temporada</option>
+      <option value='3'>Winter</option>
+      <option value='1'>Spring</option>
+      <option value='2'>Summer</option>
+      <option value='0'>Fall</option>
+    </select>
+  </div>
+  <div class="input-group mt-1">
+    <div class="input-group-text color-boton">
+      <img src="https://cdn-icons-png.flaticon.com/512/88/88670.png" alt="icon" style="height: 1rem"/>
+    </div>
+    <input class="form-control" type="number" placeholder="Compras Previas"  formControlName="compras_previas"/>
+  </div>
+    <div class="">
+      <input type="submit" class="text-white shadows-semibold btn color-boton w-100 mt-4 fw-semibold shadows-semibold" value="Registrar"/>
+      <input type="button" class="text-white shadows-semibold btn color-boton w-100 mt-4 fw-semibold shadows-semibold" value="Salir" (click)="salir()"/>
+    </div>
+    </form>
+    <div class="d-flex gap-1 justify-content-center mt-1"></div>
+  </div>
+  </div>
+</body>

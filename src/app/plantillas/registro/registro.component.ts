@@ -27,8 +27,8 @@ export class RegistroComponent {
       email:['',Validators.required],
       phone:['',Validators.required],
       us_user:['',Validators.required],
-      us_password:['',Validators.required],
-      })
+      us_password:['',Validators.required]
+    })
   }
 
   postForm(form:RegistroI){

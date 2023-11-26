@@ -14,6 +14,9 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { LoginComponent } from './vistas/login/login.component';
 import {HttpClientModule} from '@angular/common/http';
+import { DashboardComponent } from './plantillas/dashboard/dashboard.component';
+import { PrediccionComponent } from './plantillas/prediccion/prediccion.component';
+import { AnalisisComponent } from './plantillas/analisis/analisis.component';
 
 
 @NgModule({
@@ -21,10 +24,12 @@ import {HttpClientModule} from '@angular/common/http';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    
-  HomeComponent,
+    HomeComponent,
     RegistroComponent,
-   LoginComponent
+    LoginComponent,
+    DashboardComponent,
+    PrediccionComponent,
+    AnalisisComponent
   ],
   imports: [
     BrowserModule,
