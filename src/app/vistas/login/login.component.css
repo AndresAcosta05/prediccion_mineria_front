@@ -1,0 +1,18 @@
+.background-login {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(247, 239, 232);
+}
+.color-b {
+  background-color: rgb(204, 201, 243);
+}
+
+.color-boton {
+  background-color: rgb(87, 45, 241);
+}
+
+.login {
+  margin: 20px auto;
+}

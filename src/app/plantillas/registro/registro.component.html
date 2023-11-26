@@ -1,0 +1,72 @@
+<app-header></app-header>
+<body class="color-b d-flex justify-content-center align-items-center">
+  <div class="contenedor">
+    <div class="bg-white p-5 rounded-5 text-secondary shadow" style="width: 30rem">
+    <div class="d-flex justify-content-center">
+      <img src="https://cdn-icons-png.flaticon.com/512/5146/5146927.png" alt="registro-icon" style="height: 7rem"/>
+    </div>
+    <form [formGroup]="nuevoForm" (ngSubmit)="postForm(nuevoForm.value)">
+        <div class="text-center fs-1 fw-bold">Registro Usuarios</div>
+    <div class="input-group mt-4">
+      <div class="input-group-text color-boton">
+        <img src="https://cdn-icons-png.flaticon.com/512/88/88670.png" alt="icon" style="height: 1rem"/>
+      </div>
+      <input class="form-control" type="text" placeholder="Documento" formControlName="document"/>
+    </div>
+    <div class="input-group mt-1">
+      <div class="input-group-text color-boton">
+        <img src="https://cdn-icons-png.flaticon.com/512/88/88670.png" alt="icon" style="height: 1rem"/>
+      </div>
+      <input class="form-control" type="text" placeholder="Nombre" formControlName="name"/>
+    </div>
+    <div class="input-group mt-1">
+      <div class="input-group-text color-boton">
+        <img src="https://cdn-icons-png.flaticon.com/512/88/88670.png" alt="icon" style="height: 1rem"/>
+      </div>
+      <input class="form-control" type="text" placeholder="Segundo Nombre"  formControlName="second_name"/>
+    </div>
+    <div class="input-group mt-1">
+      <div class="input-group-text color-boton">
+        <img src="https://cdn-icons-png.flaticon.com/512/88/88670.png" alt="icon" style="height: 1rem"/>
+      </div>
+      <input class="form-control" type="text" placeholder="Apellido"   formControlName="lastname"/>
+    </div>
+    <div class="input-group mt-1">
+      <div class="input-group-text color-boton">
+        <img src="https://cdn-icons-png.flaticon.com/512/88/88670.png" alt="icon" style="height: 1rem"/>
+      </div>
+      <input class="form-control" type="text" placeholder="Segundo Apellido"  formControlName="second_lastname"/>
+    </div>
+    <div class="input-group mt-1">
+      <div class="input-group-text color-boton">
+        <img src="https://cdn-icons-png.flaticon.com/512/88/88670.png" alt="icon" style="height: 1rem"/>
+      </div>
+      <input class="form-control" type="email" placeholder="Correo Electronico"  formControlName="email" />
+    </div>
+    <div class="input-group mt-1">
+      <div class="input-group-text color-boton">
+        <img src="https://cdn-icons-png.flaticon.com/512/88/88670.png" alt="icon" style="height: 1rem"/>
+      </div>
+      <input class="form-control" type="number" placeholder="Telefono"  formControlName="phone"/>
+    </div>
+    <div class="input-group mt-1">
+      <div class="input-group-text color-boton">
+        <img src="https://cdn-icons-png.flaticon.com/512/88/88670.png" alt="icon" style="height: 1rem"/>
+      </div>
+      <input class="form-control" type="text" placeholder="Usuario"  formControlName="us_user"/>
+    </div>
+    <div class="input-group mt-1">
+      <div class="input-group-text color-boton">
+        <img src="https://cdn-icons-png.flaticon.com/512/88/88670.png" alt="icon" style="height: 1rem"/>
+      </div>
+      <input class="form-control" type="password" placeholder="Contraseña"  formControlName="us_password" />
+    </div>
+    <div class="">
+      <input type="submit" class="text-white shadows-semibold btn color-boton w-100 mt-4 fw-semibold shadows-semibold" value="Registrar"/>
+      <input type="button" class="text-white shadows-semibold btn color-boton w-100 mt-4 fw-semibold shadows-semibold" value="Salir" (click)="salir()"/>
+    </div>
+    </form>
+    <div class="d-flex gap-1 justify-content-center mt-1"></div>
+  </div>
+  </div>
+</body>
